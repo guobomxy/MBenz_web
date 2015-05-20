@@ -1,0 +1,108 @@
+*{padding:0;margin:0;}
+body{background: #B3221D;overflow-x: hidden;
+    background-size:100% 532px;font-size: 14px;}
+.ggk{position:relative;top:170px;background:#ffffff center top ;width:290px;height:160px;
+    background-size:310px;margin: 0 auto;z-index: 99}
+.card-wrap{position:absolute;top:10px;left:10px;background:#FFC404 center top ;width:270px;height:140px;
+    background-size:310px;margin: 0 auto;z-index: 99}
+.card-wrap h3{position: absolute;top:18px;left:48px;color:#000000;font-weight: normal;font-size: 14px;line-height:24px;}
+.card-wrap h3 em{font-size:18px;font-style:normal;padding:0 3px;}
+.hand{position: absolute;right:0;top:235px;z-index: 999;width: 74px;}
+
+/*.btn-share{display: block;background:#F39800;height:35px;line-height: 35px;
+    color:#fff;text-align: center;text-decoration: none;border-radius: 10px; } */
+.btnaward{display: block;background:#B62220;height:30px;margin-left:7px;line-height: 30px;width:70px;
+    color:#E4C178;text-align: center;font-size:15px;text-decoration: none;border-radius: 10px; border:1px solid #E4C178;}
+.btn-share{text-decoration: none;}
+.haveg{left:50%;height:50px;position: absolute;margin-left:-150px;margin-top:20px;z-index: 999;font-size:20px;color:#ffc404;}
+.recharge{float:right;margin-right:20px;margin-top:-2px;text-align:center;color:#000;position:anbsolute;width:48px;height:25px;line-height:27px;text-decoration: none;font-size:15px;border-radius: 4px; border:1px solid #000;}
+.share{left:115px;width:80px;margin-top:-20px;}
+.box{background:#B62220;min-height:112px;line-height: 1.8;margin-top:15px;background: #B62220;
+    color:#fff;text-align: left;text-decoration: none;border-radius: 10px;border:1px solid #B62220;
+    padding: 10px 15px;
+}
+.box h3{height:30px;line-height:30px;color:#E84C3D;border-bottom:1px solid #F1DCAE;text-indent: 25px;background: url(images/icon.png) 0 4px  no-repeat;}
+.box h3.icon-active{background-position: 0 -38px;}
+.box p{color:#E4C178;padding-top:2.5px;}
+.box a{text-decoration: none;}
+.box table{width:100%;height:144px;border:1;font-size:15px;text-align:center;align:center;}
+.box table td img{position: relative;}
+#gift table td img{position:relative;}
+#gift {margin-top:20px;}
+
+/*比赛代码*/
+#code{position:absolute;top:84px;left:49px;width:164px;height:42px;background:#969696;}
+#code p{display:none;position:absolute;top:0;left:0;width:164px;height:42px;text-align:center;
+    line-height:43px;padding:0;margin:0;font-size:17px;font-weight:bold;color:#000;background:#FFEEC3;}
+/*遮罩*/
+#mask{width:165px;height:45px;top:82px;left:49px;z-index:999;}
+
+
+#begin{width:165px;position:absolute;height:45px;top:74px;left:49px;z-index:999;}
+
+.se-top{text-align:left;width:290px;left:50%;height:50px;position: absolute;top:15px;margin-left:-130px;textleft:0;z-index: 999;}
+
+.thr-top{width:100;height:50px;background:#fff;position: relative;top:0px;textleft:0;z-index: 999;}
+
+.back{left:50%;height:50px;position:absolute;top:15px;margin-left:-160px;}
+
+.front-top{width:100%;height:23px;position: absolute;top:0;left:0;z-index: 999;}
+.main-wrap{width:320px;position: absolute;top:0px;left:50%;margin-left:-160px;z-index:1;}
+.main-wrap img{position: absolute;}
+/*bg-0*/
+.main-wrap .front-bg{width:320px;top:25px;
+    animation: ani-translate-0 3.5s ease-in-out infinite;
+    -webkit-animation: ani-translate-0 3.5s ease-in-out infinite;
+}
+
+/*man*/
+.main-wrap .man{width:320px;top:45px;width: 72px;
+    animation: ani-translate-0 2s ease-in-out infinite;
+    -webkit-animation: ani-translate-0 2s ease-in-out infinite;
+}
+
+
+.ani-logo{
+    animation: ani-scale-0 1.2s;
+    -webkit-animation: ani-scale-0 1.2s;
+}
+
+.ani-gift{
+    animation: ani-scale-0 2s;
+    -webkit-animation: ani-scale-0 2s;
+}
+
+
+/*logo*/
+.main-wrap .logo{width:230px;top:70px;
+   /* */
+}
+/*gift*/
+.main-wrap .gift{width:145px;right:0px;top:130px;
+    /* animation: ani-scale-0 1.5s;
+     -webkit-animation: ani-scale-0 1.5s ;*/
+}
+
+/*动画api*/
+@keyframes ani-scale-0 {
+    0% { transform:scale(.1,.1);opacity:0;}
+    60% { transform:scale(1.1,1.1);}
+    100% { transform:scale(1,1);opacity:1;}
+}
+@-webkit-keyframes ani-scale-0 {
+    0% { -webkit-transform:scale(.1,.1);opacity:0;}
+    60% { -webkit-transform:scale(1.1,1.1);}
+    100% { -webkit-transform:scale(1,1);opacity:1;}
+}
+
+
+@keyframes ani-translate-0 {
+    0% { transform:translate(0, 0);}
+    50% { transform:translate(0, 15px);}
+    100% { transform:translate(0, 0);}
+}
+@-webkit-keyframes ani-translate-0 {
+    0% { -webkit-transform:translate(0, 0);}
+    50% { -webkit-transform:translate(0, -25px);}
+    100% { -webkit-transform:translate(0, 0);}
+}

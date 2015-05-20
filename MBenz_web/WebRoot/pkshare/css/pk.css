@@ -1,0 +1,69 @@
+*{ padding:0; margin:0;}
+a,button,input,img,span{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+body,html{ margin:0; font-family:helvetica; margin:0 auto; font-size:13px;background-color:#2e6434;max-width:800px;}
+div{ margin:0; font-family:helvetica; margin:0 auto; font-size:13px;max-width:800px}
+hr { height:0px; border-top:1.5px solid #fff; border-right:0px; border-bottom:0px; border-left:0px;margin-top:40px;align:center}
+.head{width:100%;margin:0 auto;}
+.hrtl{color:#fff;text-align:center;font-size:17px;width:40%;margin-left:50%;background-color:#228B22;height:30px;line-height:30px;margin:0 auto;}
+.prod2{margin:0 auto;width:96%;position:relative;} 
+.prod2 table {cellpadding:0;cellspacing:0:border:0;border-collapse:collapse;width:100%;}
+.prod2 table tr td {text-align:center;}
+
+.prod3{margin:0 auto;width:100%;position:relative;} 
+.tips {text-align:center;color:#fff;font-size:11px;line-height:11px;margin-top:15%;}
+.tips3 {text-align:center;color:#fff;font-size:11px;line-height:11px;margin-top:15%;}
+.conbg {width:96%;margin:0 auto;position:relative;margin-top:3%;}
+#gg { position:fixed; bottom:0; background:#000; width:100%; height:55px; line-height:55px; z-index:9999; opacity:.80; color:#fff; }
+#dapp {width:45px;vertical-align:middle;margin-left:3%;}
+.dapk {float:right;font-size:17px;height:33px;width:60px;vertical-align:middle;text-align:center;line-height:35px;margin-top:12px;margin-right:10%;position:relative;background-color:#c52c14;border-radius: 4px;}
+.product{width:96%;margin-top:-45%;position:relative;vertical-align:middle;}
+.product table {cellpadding:0;cellspacing:0;border:0;border-collapse:collapse;width:100%;}
+.product table tr td {text-align:center;}
+.product3{width:90%;margin-top:15%;position:relative;vertical-align:middle;z-index:999;}
+.product3 table {cellpadding:0;cellspacing:0;border:0;border-collapse:collapse;width:100%;}
+.product3 table tr td {text-align:center;}
+.memo {position:absolute;top:25%;left:9%;width:80%;color:#fff;}
+.ched {color:yellow;font-weight:800;font-size:15px;}
+#erwei {position:relative;max-width:800px;margin-left:5%;}
+.cccd {width:40%;margin-top:10%;}
+.sm{color:yellow;font-size:15px;}
+.bk {height:10%;}
+#cls{position:absolute;right:3%;top:10%;opacity:none;}
+
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .75);
+	display: none;
+	z-index: 1000;
+}
+.mask1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .75);
+	display: block;
+	z-index: 1000;
+}
+.popup {
+	width: 80%;
+	top: 5px;
+	left: 10%;
+	position: fixed;
+	display: none;
+	z-index: 1001;
+}
+.popup1 {
+	width: 80%;
+	top: 30%;
+	left: 10%;
+	position: fixed;
+	display: block;
+	z-index: 1001;
+}
+

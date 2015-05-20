@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>刮刮卡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link href="css/main.css?a=1" rel="stylesheet" />
+<style>
+	a,button,input,img,p,canvas,div{-webkit-tap-highlight-color:rgba(255,0,0,0);}	
+</style>
+<body>
+<div class="thr-top">
+	<div class="back"><img outdata="image/gray-back.png" src="image/bgt.png" style="margin-top:-10px;" width="30px;" onclick="goback()" /></div>
+		<div class="se-top" style="font-size:20px;color:#ffc404;">
+			<b style="margin-left:1px;font-size:17px;color:#000;">扬眉吐气&nbsp;一步之遥</b>
+			<div class="recharge" onclick="gotoExchange()">&nbsp;<strong>兑换</strong>&nbsp;</div>
+		</div>
+	</div>
+	<div>
+		<div class="haveg"><b>已有<span id="ugd" style="color:#FFFFFF">0</span>金币</b></div>
+	</div>
+	
+<div class="main-wrap">
+    <img class="logo" outdata="image/head.png" src="image/bgt.png" style="width:320px;" />
+    <div style="margin-top:400px;"><img style="left:-5px;width:121px;" outdata="image/download.png" src="image/bgt.png"/><br/><span style="color:white;margin-left:110px;font-size:12px;"><b>下载即送金币</b></span></div>
+
+    <div style="padding:0 10px;margin-top:5px;">
+        <div class="box">
+            <table style="width:300px;margin-left:-11px;">
+            	<tr style="width:100%;">
+            		<td><img id="im1" style="margin-left:-11px;" outdata="" src="image/bgt.png" height=72 /></td>
+            		<td><img id="im2" style="margin-left:-11px;" outdata="" src="image/bgt.png" height=72/></td>
+            		<td><img id="im3" style="margin-left:-11px;" outdata="" src="image/bgt.png" height=72/></td>
+            	</tr>
+            	<tr style="width:100%;margin-top:-20px;text-align: center;">
+            		<td><p id="sc1" style="margin-left:-11px;" style="font-size:12px;text-align: center;"><p/></td>
+            		<td><p id="sc2" style="margin-left:-11px;" style="font-size:12px;text-align: center;"><p/></td>
+            		<td><p id="sc3" style="margin-left:-11px;" style="font-size:12px;text-align: center;"><p/></td>
+            	</tr>
+            	<tr style="width:100%;">
+            		<td><p class="btnaward" id="d1" style="font-size:14px;" onclick="downapp(1)">领<span id="s1">0</span>金币</p></td>
+            		<td><p class="btnaward" id="d2" style="font-size:14px;" onclick="downapp(2)">领<span id="s2">0</span>金币</p></td>
+            		<td><p class="btnaward" id="d3" style="font-size:14px;" onclick="downapp(3)">领<span id="s3">0</span>金币</p></td>
+            	</tr>	
+            		
+            </table>
+        </div>
+        <div><img style="left:-10px;width:121px;" outdata="image/award.png" src="image/bgt.png"/></div><br/><br/><br/>
+        <div style="left:5px;width:310px;font-size:12px;color:white;line-height:20px;letter-spacing:1px">小提示:分享‘去哪下’APP给你的的小伙伴们，即可获得金币！每天都有一次机会，记得过来领哦！</div><br/><br/>
+                   	
+        <a  href="javascript:void(0);"><img class="share" outdata="image/share.png" src="image/bgt.png" width="50px;" onclick="fenx()"/></a>
+        <div style="margin-top:20px;">&nbsp;</div>
+        
+    </div>
+</div>
+<div class="ggk">
+<div class="card-wrap">
+    <div id="code">
+        <p id="ifget">谢谢您的参与！</p>
+    </div>
+    <div id="mask" ></div>
+    <div id="begin"><img id="begini" style="margin-top:2px;" outdata="image/begin.png" src="image/bgt.png" width="167px;" onclick="reshow()"/></div>
+    <h3 style="text-align:center;letter-spacing:4px;font-size:17px;"><b><strong>每天三次免费机会<br/>快快来虐我！</strong></b></h3>
+</div>
+</div>
+<script src="../game-base/zepto.min.js"></script>
+<script type="text/javascript" src="script/w-scratch-pad-zepto-min.js"></script>
+<script src="script/zepto.alert-min.js?a=1" type="text/javascript"></script>
+<script src="script/main.min.js?a=1"></script>
+</body>
+</html>

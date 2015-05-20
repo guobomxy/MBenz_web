@@ -1,0 +1,86 @@
+*{padding:0;margin:0;-webkit-user-select:none;-moz-user-select:none;}
+body{background:url(images/bg.jpg) center top no-repeat #FFDD86;overflow-x: hidden;
+    background-size:100% 532px;font-size: 14px;}
+.card-wrap{position:relative;top:164px;background:url(images/card-bg.png) center top no-repeat;width:310px;height:160px;
+    background-size:310px;margin: 0 auto;z-index: 99}
+.card-wrap h3{position: absolute;top:18px;left:15px;color:#fff;font-weight: normal;font-size: 14px;line-height:24px;}
+.card-wrap h3 em{font-size:18px;font-style:normal;padding:0 3px;}
+.hand{position: absolute;right:0;top:235px;z-index: 999;width: 74px;}
+
+.btn-share{display: block;background:#F39800;height:35px;line-height: 35px;
+    color:#fff;text-align: center;text-decoration: none;border-radius: 10px; }
+.box{background:#F39800;min-height:112px;line-height: 1.8;margin-top:15px;background: #FFEEC2;
+    color:#fff;text-align: left;text-decoration: none;border-radius: 10px;border:1px solid #E4C178;
+    padding: 10px 15px;
+}
+.box h3{height:30px;line-height:30px;color:#E84C3D;border-bottom:1px solid #F1DCAE;text-indent: 25px;background: url(images/icon.png) 0 4px  no-repeat;}
+.box h3.icon-active{background-position: 0 -38px;}
+.box p{color:#B28850;padding-top:5px;}
+
+/*比赛代码*/
+#code{position:absolute;top:65px;left:36px;width:196px;height:42px;background:#969696;}
+#code p{display:none;position:absolute;top:0;left:0;width:196px;height:42px;text-align:center;
+    line-height:43px;padding:0;margin:0;font-size:20px;font-weight:bold;color:#000;background:#FFEEC3;}
+/*遮罩*/
+#mask{width:199px;height:45px;top:63px;left:34px;z-index:999;}
+
+.front-top{width:100%;height:23px;position: absolute;top:0;left:0;z-index: 999;}
+.main-wrap{width:320px;position: absolute;top:0;left:50%;margin-left:-160px;z-index:1;}
+.main-wrap img{position: absolute;}
+/*bg-0*/
+.main-wrap .front-bg{width:320px;top:25px;
+    animation: ani-translate-0 3.5s ease-in-out infinite;
+    -webkit-animation: ani-translate-0 3.5s ease-in-out infinite;
+}
+
+/*man*/
+.main-wrap .man{width:320px;top:45px;width: 72px;
+    animation: ani-translate-0 2s ease-in-out infinite;
+    -webkit-animation: ani-translate-0 2s ease-in-out infinite;
+}
+
+
+.ani-logo{
+    animation: ani-scale-0 1.2s;
+    -webkit-animation: ani-scale-0 1.2s;
+}
+
+.ani-gift{
+    animation: ani-scale-0 2s;
+    -webkit-animation: ani-scale-0 2s;
+}
+
+
+/*logo*/
+.main-wrap .logo{width:230px;top:52px;left:50%;margin-left:-98px;
+   /* */
+}
+/*gift*/
+.main-wrap .gift{width:145px;right:0px;top:130px;
+    /* animation: ani-scale-0 1.5s;
+     -webkit-animation: ani-scale-0 1.5s ;*/
+}
+
+/*动画api*/
+@keyframes ani-scale-0 {
+    0% { transform:scale(.1,.1);opacity:0;}
+    60% { transform:scale(1.1,1.1);}
+    100% { transform:scale(1,1);opacity:1;}
+}
+@-webkit-keyframes ani-scale-0 {
+    0% { -webkit-transform:scale(.1,.1);opacity:0;}
+    60% { -webkit-transform:scale(1.1,1.1);}
+    100% { -webkit-transform:scale(1,1);opacity:1;}
+}
+
+
+@keyframes ani-translate-0 {
+    0% { transform:translate(0, 0);}
+    50% { transform:translate(0, 15px);}
+    100% { transform:translate(0, 0);}
+}
+@-webkit-keyframes ani-translate-0 {
+    0% { -webkit-transform:translate(0, 0);}
+    50% { -webkit-transform:translate(0, -25px);}
+    100% { -webkit-transform:translate(0, 0);}
+}

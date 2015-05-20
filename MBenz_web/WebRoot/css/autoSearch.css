@@ -1,0 +1,31 @@
+.autoSearchText{
+    border:solid 1px #CFCFCF;  
+    height:20px; 
+    color:Gray;
+}
+.menu_v{
+    margin:0;
+    padding:0;
+    line-height:20px;
+    font-size:12px;
+    list-style-type:none;
+}
+.menu_v li{
+    margin:0;
+    padding:0;
+    line-height:20px;
+    font-size:14px;
+    list-style-type:none;
+    float:none;
+}
+.menu_v li span{
+    color:Red;
+}
+#autoSearchItem{
+    border:solid 1px #CFCFCF;  
+    visibility:hidden;
+    position:absolute; 
+    background-color:white; 
+    overflow-y:auto;
+    z-index: 1000
+}

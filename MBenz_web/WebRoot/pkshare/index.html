@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<head>
+<title>安卓大市场精选PK汇</title>
+<link rel="stylesheet" type="text/css" href="css/pk.css?r=1" />
+<script type="text/javascript" src="js/zepto.min.js?a=1"></script>
+<script type="text/javascript" src="js/pk.js?a=1"></script>
+<script type="text/javascript" src="js/zepto.alert.js?d=1"></script>
+</head>
+<body>
+	<div class="eventview">
+		<!--头部-->
+		<div height="10px;">&nbsp;</div>
+		<div class="head">
+			<img src="image/head2.png" width="100%"/>
+		</div>
+		<!--头部结束-->
+		<!--两个产品-->
+		<div class="prod2">
+			<table width="100%">
+					<tr>
+						<td width="50%"><img src="image/blue4.png" width="100%"/></td><td width="50%"><img src="image/orange6.png" width="95%"/></td>
+					</tr>
+				</table>
+		</div>
+		
+		<div class="product">
+				<table>
+					<tr>
+						<td width="50%"><img id="pico" src="image/jiazaizhong.png" width="45%"/></td>
+						<td><img id="pict" src="image/jiazaizhong.png" width="45%"/></td>
+					</tr>
+					<tr style="height:10%;color:#fff;">
+						<td><div id="sa1"></div></td><td><div id="sa2"></div></td>
+					</tr>
+					<tr style="height:10%;">
+						<td><img id="pl1" src="image/lan.png" width="17%" onclick="plus('1')"/></td>
+						<td><img id="pl2" src="image/cheng.png" width="17%" onclick="plus('2')"/></td>
+					</tr>
+				</table>
+		</div>
+		
+		<div class="tips">
+			小贴士：点击 <img src="image/like.png" width="13px"/> 就可以和大家一起为喜欢的软件点赞了哦。
+		</div>
+		
+		<!--两个产品结束-->
+		
+		<!--麻辣点评-->
+		<div class="conbg">
+			<img src="image/content.png" width="100%" />
+			<div class="memo" ><span class="ched">麻辣点评：</span><span id="stext"></span></div>
+		</div>
+		<!--麻辣点评结束-->
+		
+		<div id="erwei">
+			<div class="ercon" style="border-left:#EEEE00 4px solid;">&nbsp;<span class="sm">扫描二维码，获取更多精彩</span></div>
+		</div>
+		<div class="cccd">
+			<img src="image/qrphp.png" width="100%"/>
+		</div>
+		
+		<div class="bk">&nbsp;</div>
+		<br/>
+		<br/>
+		<br/>
+		
+		<iframe id="ifile" style="display:none"></iframe>
+		<div class="mask js-mask" onclick="hd()"></div>
+		<div class="popup js-pop" onclick="hd()"><img src="image/tips.png" width="100%"></div>
+		<!--固定在底部-->
+		<div id="gg">
+			<img id="dapp" src="http://122.225.203.70:18191/upload/icon/20150212/ICON_2813311433246643.png" onclick="downapp()"/><span>安卓大市场</span>
+			<div class="dapk" onclick="downapp()"><b>下载</b></div>
+			<div id="cls"><img src="image/x.png" width="15px;" onclick="bclose()"/></div>
+		</div>
+		<!--固定在底部结束-->
+	</div>
+</body>
+<script>
+	var soft1;
+	var soft2;
+	var soft3;
+	var length;
+ 	var Request = new Object();
+ 	Request = GetRequest();
+ 	var pkid = Request['pkid'];
+	$(function(){
+		$.ajax({
+			type : 'POST',
+			url : '../pkshare!pkproduct.action',
+			data : {"pkid":pkid},
+			dataType : 'html',
+			success : function(data){
+				var res =eval("("+data+")");
+				code=res.code;
+				if(code==200){
+					length = res.soft.length;
+					if(length==2){
+						soft1=res.soft[0];
+						soft2=res.soft[1];
+					}
+					$("#pico").attr('src',icontool(soft1.icon,soft1.id));
+					$("#pict").attr('src',icontool(soft2.icon,soft2.id));
+					$('#sa1').html(soft1.name);
+					$('#sa2').html(soft2.name);
+					$('#stext').html(res.text);
+					
+				}
+			}
+		});
+	});
+</script>
+</html>

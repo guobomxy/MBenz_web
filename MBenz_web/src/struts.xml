@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.action.extension" value="action,,"/>
+	<!-- convention配置 -->
+	<!--  指定控制器类的后缀为 Controller --> 
+    <constant name="struts.convention.action.suffix" value="Action"/>
+    <constant name="struts.convention.action.mapAllMatches" value="true"/>
+    <!-- 指定 Action 所在包继承的父包 --> 
+	<constant name="struts.convention.package.locators" value="actions" />
+	<constant name="struts.convention.package.locators.basePackage" value="com.fangchehome.web.actions" />
+	<constant name="struts.multipart.maxSize" value="1000000000" />
+	<constant name="struts.convention.result.path" value="/WEB-INF/content/"/>
+	
+	<package name="test" namespace="/"  extends="strust-default,json-default">
+		<interceptors>
+	    	<!-- 拦截器栈 -->
+			<interceptor-stack name="lotteryStack">
+				<!-- 增加store interceptor保证actionMessage在redirect后不会丢失 -->
+				<interceptor-ref name="store">
+					<param name="operationMode">AUTOMATIC</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="lotteryStack" />
+		<global-results>
+			<result name="fwd_error">/common/error.jsp</result>
+			<result name="input">/common/error.jsp</result>
+		    <result type="redirectAction" name="fwd_login">/user/user!login</result>
+		    <result name="single_download">/WEB-INF/content/lottery/single-content-download.jsp</result>
+		</global-results>
+	</package>
+	
+	<!-- 
+		使用Convention插件,实现约定大于配置的零配置文件风格.
+	           特殊的Result路径在Action类中使用@Result设定. 
+	-->
+</struts>

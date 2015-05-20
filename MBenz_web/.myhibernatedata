@@ -1,0 +1,23 @@
+#
+#Thu Nov 06 09:44:54 CST 2014
+genBasicCompId=false
+sessionFactoryName=com.fangchehome.hibernate.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=
+configFile=/MBenz_web/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true
+baseDaoClass=
