@@ -3,11 +3,11 @@
   type="WEB"
   name="MBenz_web"
   id="myeclipse.1355980984734"
-  context-root="/zmapptask"
+  context-root="/mbenz"
   j2ee-spec="6.0"
   archive="MBenz_web.war">
   <attributes>
-    <attribute name="webrootdir" value="/WebRoot" />
+    <attribute name="webrootdir" value="WebRoot" />
   </attributes>
 </project-module>
 
