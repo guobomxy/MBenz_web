@@ -29,7 +29,7 @@ public class LoginAction extends Action {
 			return;
 		}
 		String pwd = new SHA1().getDigestOfString(password.getBytes()).toLowerCase();
-		String sql = "SELECT id FROM ss_user WHERE login_name='"+username+"' AND PASSWORD ='"+pwd+"'";
+		String sql = "SELECT id FROM user WHERE username='"+username+"' AND password ='"+pwd+"'";
 		List<Map> userList = (List<Map>) HibernateUtil.getSQL2MapList(sql);
 		try {
 			if(userList.size()>0) {

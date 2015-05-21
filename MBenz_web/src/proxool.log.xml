@@ -10,8 +10,8 @@
 		<driver-class>com.mysql.jdbc.Driver</driver-class> 
 		<!-- 数据库连接帐号 -->
 		<driver-properties>
-		<property name="user" value="zmol" />
-		<property name="password" value="123456" />
+		<property name="user" value="root" />
+		<property name="password" value="root" />
 		</driver-properties>
 		<!-- proxool自动侦察各个连接状态的时间间隔(毫秒),侦察到空闲的连接就马上回收,超时的销毁 -->
 		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
